@@ -19,7 +19,10 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label Text="{Binding TodoText}" FontSize="Large" />
+                        <FlexLayout>
+                            <Label Text="{Binding TodoText}" FontSize="Large" />
+                            <ImageButton Source="delete.png"/>
+                        </FlexLayout>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
