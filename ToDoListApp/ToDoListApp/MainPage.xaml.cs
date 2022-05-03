@@ -16,10 +16,14 @@ namespace ToDoListApp
         }
 
         
-
         public void HandleTextChanged(object sender, TextChangedEventArgs args)
         {
             Console.WriteLine(args.NewTextValue);
+        }
+
+        public void HandleEnterPress(object sender, EventArgs args)
+        {
+            Console.WriteLine("Enter Pressed");
         }
 
     }

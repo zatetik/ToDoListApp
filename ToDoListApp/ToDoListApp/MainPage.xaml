@@ -4,7 +4,11 @@
              x:Class="ToDoListApp.MainPage">
 
     <StackLayout>
-        <Entry Text="" Placeholder="Enter a todo" TextChanged="HandleTextChanged"/>
+        <Entry Text="" 
+               Placeholder="Enter a todo" 
+               TextChanged="HandleTextChanged"
+               Completed="HandleEnterPress"
+               />
     </StackLayout>
 
 </ContentPage>
