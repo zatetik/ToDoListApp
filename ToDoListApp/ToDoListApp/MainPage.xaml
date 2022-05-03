@@ -10,8 +10,9 @@
     
     <StackLayout>
         <Entry x:Name="InputField"
-               Text="" 
-               Placeholder="Enter a todo"                
+               Text="{Binding NewTodoInputValue}" 
+               Placeholder="Enter a todo"
+               ReturnCommand="{Binding AddTodoCommand}"
                />
 
         <ListView x:Name="TodoList" ItemsSource="{Binding TodoItems}">
