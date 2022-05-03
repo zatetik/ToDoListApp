@@ -4,7 +4,7 @@
              x:Class="ToDoListApp.MainPage">
 
     <StackLayout>
-        <Button Text="Click me!" Clicked="HandleClick"/>
+        <Entry Text="" Placeholder="Enter a todo" TextChanged="HandleTextChanged"/>
     </StackLayout>
 
 </ContentPage>

@@ -15,9 +15,12 @@ namespace ToDoListApp
             InitializeComponent();
         }
 
-        public void HandleClick(object sender, EventArgs args)
+        
+
+        public void HandleTextChanged(object sender, TextChangedEventArgs args)
         {
-            Console.WriteLine("Clicked");
+            Console.WriteLine(args.NewTextValue);
         }
+
     }
 }
