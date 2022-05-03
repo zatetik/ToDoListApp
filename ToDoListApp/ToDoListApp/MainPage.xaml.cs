@@ -14,5 +14,10 @@ namespace ToDoListApp
         {
             InitializeComponent();
         }
+
+        public void HandleClick(object sender, EventArgs args)
+        {
+            Console.WriteLine("Clicked");
+        }
     }
 }
