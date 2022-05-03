@@ -24,6 +24,11 @@ namespace ToDoListApp
         public void HandleEnterPress(object sender, EventArgs args)
         {
             Console.WriteLine("Enter Pressed");
+            Label newTodo = new Label();
+            newTodo.Text = InputField.Text;
+            newTodo.FontSize = 20;
+            TodoList.Children.Add(newTodo);
+            InputField.Text = "";  //clears out the text after adding it to a new Label
         }
 
     }
