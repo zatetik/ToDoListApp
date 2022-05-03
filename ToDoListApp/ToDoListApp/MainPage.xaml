@@ -1,9 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ToDoListApp"
              x:Class="ToDoListApp.MainPage">
 
+    <ContentPage.BindingContext>
+        <local:TodoListViewModel />
+    </ContentPage.BindingContext>
+    
     <StackLayout>
+        <Entry x:Name="InputField"
+               Text="" 
+               Placeholder="Enter a todo"                
+               />
+
+        <ListView x:Name="TodoList" ItemsSource="{Binding TodoItems}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding TodoText}" FontSize="Large" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Earlier version
         <Entry x:Name="InputField"
                Text="" 
                Placeholder="Enter a todo" 
@@ -14,7 +35,7 @@
         <StackLayout x:Name="TodoList">
             
         </StackLayout>
-        
+        -->
     </StackLayout>
 
 </ContentPage>

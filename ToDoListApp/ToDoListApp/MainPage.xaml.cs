@@ -15,7 +15,7 @@ namespace ToDoListApp
             InitializeComponent();
         }
 
-        
+        /* // Earlier Version
         public void HandleTextChanged(object sender, TextChangedEventArgs args)
         {
             Console.WriteLine(args.NewTextValue);
@@ -30,6 +30,6 @@ namespace ToDoListApp
             TodoList.Children.Add(newTodo);
             InputField.Text = "";  //clears out the text after adding it to a new Label
         }
-
+        */
     }
 }
