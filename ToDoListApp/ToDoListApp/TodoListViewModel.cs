@@ -29,7 +29,8 @@ namespace ToDoListApp
         void RemoveTodoItem(object o)
         {
             TodoItem todoItemBeingRemoved = o as TodoItem;
-            Console.WriteLine(todoItemBeingRemoved.TodoText);
+            TodoItems.Remove(todoItemBeingRemoved);
+            //Console.WriteLine(todoItemBeingRemoved.TodoText);
         }
     }
 }
