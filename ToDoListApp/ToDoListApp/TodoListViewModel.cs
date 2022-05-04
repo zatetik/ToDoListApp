@@ -13,7 +13,7 @@ namespace ToDoListApp
         public TodoListViewModel()
         {
             TodoItems = new ObservableCollection<TodoItem>();
-            TodoItems.Add(new TodoItem("todo 1", false));
+            TodoItems.Add(new TodoItem("todo 1", true));
             TodoItems.Add(new TodoItem("todo 2", false));
             TodoItems.Add(new TodoItem("todo 3", false));
         }
